@@ -10,16 +10,13 @@ Summon the gremlin when you need:
 - **An over-the-top compliment** — classic, pirate, Shakespeare, or full hype-coach
 - **A fortune** — blessed, cursed (wet socks are foretold), or chaotic, and legally non-binding
 
-It is pure Python 3, standard library only. No installs, no network, no
-accounts, no secrets. Just a gremlin.
-
 ## Give it to your Muse
 
 Paste your Muse this, once the repo is on GitHub:
 
 > Install the Chaos Gremlin skill from https://github.com/YOUR-USERNAME/chaos-gremlin — follow the steps in INSTALL_FOR_MUSE.md
 
-Your Muse will clone it, check the script, run the tests, and copy it into
+Your Muse will clone it, check the script, and copy it into
 `~/workspace/custom-skills/chaos_gremlin/`, where Muse picks up custom
 skills automatically. Full agent-facing steps live in
 [INSTALL_FOR_MUSE.md](INSTALL_FOR_MUSE.md).
@@ -44,14 +41,14 @@ Then start a new conversation with Muse, or ask Muse to search for the
 ## Run it without Muse
 
 ```bash
-python3 scripts/gremlin.py decide "tea" "coffee" "pure regret"
-python3 scripts/gremlin.py excuse --context social --severity unhinged
-python3 scripts/gremlin.py quest --minutes 10
-python3 scripts/gremlin.py compliment --name NAME --style shakespeare
-python3 scripts/gremlin.py fortune --mood cursed
+./scripts/gremlin decide "tea" "coffee" "pure regret"
+./scripts/gremlin excuse --context social --severity unhinged
+./scripts/gremlin quest --minutes 10
+./scripts/gremlin compliment --name NAME --style shakespeare
+./scripts/gremlin fortune --mood cursed
 
 # Reproducible chaos, and JSON for programs:
-python3 scripts/gremlin.py --seed 42 --format json fortune --mood chaotic
+./scripts/gremlin --seed 42 --format json fortune --mood chaotic
 ```
 
 ## Repository layout
@@ -64,20 +61,14 @@ installable as-is:
 ├── SKILL.md              # Instructions Muse follows when the skill is used
 ├── skill.yaml            # Name, title, description and category Muse indexes
 ├── scripts/
-│   └── gremlin.py        # The silliness engine (stdlib only)
-├── tests/
-│   └── test_gremlin.py   # Run: python3 -m unittest discover -s tests -v
+│   └── gremlin           # The silliness engine
 ├── install.sh            # Copies the skill into ~/workspace/custom-skills/
-├── INSTALL_FOR_MUSE.md  # Step-by-step install guide for a Muse agent
+├── INSTALL_FOR_MUSE.md   # Step-by-step install guide for a Muse agent
 └── README.md             # You are here
 ```
 
-## Customise it
-
-Add your own excuses, quests, compliments and fortunes to the lists at the
-top of `scripts/gremlin.py`, run the tests, and commit. The gremlin
-welcomes better nonsense.
-
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+All rights reserved. It's just a little hobby project, but please do not
+disassemble, decompile, or reverse engineer this software, as doing so may
+violate applicable laws, including the DMCA.

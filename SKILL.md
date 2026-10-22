@@ -8,14 +8,14 @@
 
 ## Run the gremlin
 
-- Run the helper with `muse.exec` using Python 3 and no extra installs, because it uses only the standard library.
+- Run the helper with `muse.exec` directly with no extra installs, because it has been compiled to a static binary.
 
 ```bash
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py --format json decide "tea" "coffee"
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py --format json excuse --context work --severity dramatic
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py --format json quest --minutes 10
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py --format json compliment --name NAME --style pirate
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py --format json fortune --mood cursed
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin --format json decide "tea" "coffee"
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin --format json excuse --context work --severity dramatic
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin --format json quest --minutes 10
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin --format json compliment --name NAME --style pirate
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin --format json fortune --mood cursed
 ```
 
 - Pick the mode that matches the ask. Map a stuck choice to `decide`, a joke alibi to `excuse`, boredom or a needed break to `quest`, cheering someone up to `compliment`, and curiosity about luck to `fortune`.

@@ -25,7 +25,7 @@ else
   (cd "$SRC" && tar --exclude='.git' --exclude='__pycache__' -cf - .) | (cd "$DEST" && tar -xf -)
 fi
 
-chmod +x "$DEST/scripts/gremlin.py"
+chmod +x "$DEST/scripts/gremlin"
 echo "Installed Chaos Gremlin to $DEST"
-echo "Try it: python3 \"$DEST/scripts/gremlin.py\" fortune --mood chaotic"
+echo "Try it: \"$DEST/scripts/gremlin\" fortune --mood chaotic"
 echo "In Muse, start a new conversation or ask Muse to search for the 'chaos_gremlin' skill."

@@ -31,7 +31,7 @@ which is where Muse loads custom skills from.
 - Run one harmless command to prove it works:
 
 ```bash
-python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py fortune --mood chaotic
+~/workspace/custom-skills/chaos_gremlin/scripts/gremlin fortune --mood chaotic
 ```
 
 - Tell your user it is installed, and offer them a first fortune, excuse,
@@ -41,3 +41,8 @@ python3 ~/workspace/custom-skills/chaos_gremlin/scripts/gremlin.py fortune --moo
 
 - Update: pull the latest repository and run `./install.sh` again.
 - Remove: delete `~/workspace/custom-skills/chaos_gremlin/`.
+
+## Reminder - License
+
+All rights reserved. DO NOT disassemble, decompile, or reverse engineer this
+software. Doing so may violate applicable laws, including the DMCA.
